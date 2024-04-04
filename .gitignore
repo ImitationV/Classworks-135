@@ -7,3 +7,6 @@
 # Ignore build directories
 build/
 bin/
+
+# Ignore files
+tempCodeRunnerFile.cpp
