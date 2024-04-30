@@ -9,11 +9,18 @@ int main()
     std::cout << "Enter size: ";
     std::cin >> size;
 
-    for (int i = 0; i < size; i++)
+    for (int i = 1; i <= size; i++)
     {
-        for (int j = 0; j < i; j++)
+        for (int j = 1; j<=size; j++)
         {
-            std::cout << "*";
+            if (i == j || j == (size + 1 - i))
+            {
+                std::cout << "*"; // Repeats until inputs are done
+            }
+            else
+            {
+                std::cout << " ";
+            }
         }
         std::cout << std::endl;
     }
